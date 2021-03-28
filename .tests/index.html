@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Codificación de caracteres -->
+        <meta charset="UTF-8" />
+
+        <!-- Compatibilidad con navegadores -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Página multidispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Titulo de la página -->
+        <title>Html things</title>
+    </head>
+    <body>
+        <!-- Encabezados -->
+        <h1>Titulo con h1</h1>
+        <h2>Titulo con h2</h2>
+        <h3>Titulo con h3</h3>
+        <h4>Titulo con h4</h4>
+        <h5>Titulo con h5</h5>
+        <h6>Titulo con h6</h6>
+
+        <!-- Parrafos -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt magni pariatur ipsum rem quae, vel consequatur doloribus quaerat
+            voluptatum impedit, at maxime? Blanditiis, eveniet nesciunt. Voluptas libero iste fugit!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eligendi iusto, debitis neque tenetur deleniti temporibus. Soluta qui
+            consequatur a minus nesciunt, aliquid nobis ab dicta hic ipsam obcaecati earum.
+        </p>
+
+        <!-- Lista sin orden -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+         <!-- Lista ordenada -->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <!-- Enalece a una página externa -->
+        <a href="https://www.google.com">Ir a google</a>
+        <br />
+
+        <!-- Enalece a una página interna -->
+        <a href="other.html">Ir a pagina interna</a>
+
+        <!-- Barra lateral -->
+        <aside></aside>
+
+        <!-- Ejemplo de contenido de la página -->
+        <main>
+            <article>
+                <section>
+                    <!-- Figura con texto descriptivo -->
+                    <figcaption>
+                        <!-- Figura -->
+                        <figure>
+                            <!-- Imagen -->
+                            <img src="Profile_-_Celia.png" alt="La celia" />
+                            <!-- Descripción -->
+                            <p>Texto de la imagen</p>
+                        </figure>
+                    </figcaption>
+                </section>
+            </article>
+        </main>
+
+        <!-- Formulario -->
+        <form action="./test.js" method="GET">
+            <!-- Etiqueta para el campo nombre -->
+            <label for="nombre">Nombre: </label>
+
+            <!-- Inputs -->
+            <input type="text" name="" id="nombre">
+            <input type="number" name="" id="">
+            <input type="password" name="" id="">
+            <input type="email" name="" id="">
+            
+            <!-- Select from value -->
+            <select name="coche" id="">
+                <option value="fiat">FIAT</option>
+                <option value="farrari">FARRARI</option>
+            </select>
+
+            <!-- Text areas -->
+            <textarea name="" id="" cols="30" rows="10"></textarea>         
+        </form>
+
+        <!-- File uploading -->
+        <form action="" enctype="text/plain">
+            <input type="file" name="file" id="file">   
+        </form>
+
+        <!-- Video tag -->
+        <video src="./rutavideo" controls height="300px" width="600px"></video>
+
+        <!-- Fieldset -->
+        <fieldset>
+            <legend>Datos personales</legend>
+            Nombre: <input type="text" name="nombre" id="fieldset_nombre"><br><br>
+            Apellido: <input type="text" name="apellido" id="fieldset_apellido">
+        </fieldset>
+
+        <!-- Acronimos y abrebiaciones -->
+        <acronym title="Esto es un acronimo">EEUA</acronym>
+        <abbr title="Esto es una abreviación">Abr</abbr>
+
+        <!-- Progress bar -->
+        <meter id="progreso" value="30" min="0" max="100">30%</meter>        
+    </body>
+</html>
