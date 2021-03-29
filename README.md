@@ -19,4 +19,4 @@ Content section labels, section can contain articles and articles can contain se
 Nesting: section can contain articles, i.e. if we have some articles about HTML tags, they should be placed inside one section, due to they have related content, and articles would be independent because we could read one whitout reading the others and it would still have its own sense. Article is defined as component of the page with independent content, this tag could have a header and a footer.
 
 ## [Block and Line elements](./block-and-line-elements/index.html)
-Block elements will occupy the full available width even if their content does not, so the elements below will go to the following line
+Block elements will occupy the full available width even if their content does not, so the elements below will go to the following line. Line elements will take only the width they need, so it's possible to display more than one element in the same line.
