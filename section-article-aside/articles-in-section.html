@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles in sections</title>
+</head>
+<body>
+    <header>
+        <h1>Fake newspaper</h1>
+    </header>
+    <aside>Go to our sports newspaper</aside>
+    <main>
+        <section>
+            <h2>Today's news</h2>
+            <!-- Example of bad use -->
+            <!-- <article>New 1</article> -->
+            
+            <!-- Example of good use -->
+            <article>
+                <h3>News 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, aliquam. Esse laudantium sequi voluptate accusantium id recusandae vel tempora blanditiis iusto eligendi magni nam, dolores dicta porro pariatur odio corrupti! 20/02/2021</p>
+            </article>
+
+            <!-- The best -->
+            <article>
+                <header>
+                    <h3>News 3</h3>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, aliquam. Esse laudantium sequi voluptate accusantium id recusandae vel tempora blanditiis iusto eligendi magni nam, dolores dicta porro pariatur odio corrupti!</p>
+                <footer>
+                    Date: 20/02/2021
+                </footer>
+            </article> 
+        </section>
+    </main>
+    <footer>
+        The fake newspaper 2021
+    </footer>
+</body>
+</html>
