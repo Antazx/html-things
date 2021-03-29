@@ -21,7 +21,7 @@ Nesting: section can contain articles, i.e. if we have some articles about HTML 
 
 ## [Block and Line elements](./block-and-line-elements/index.html)
 Block elements will occupy the full available width even if their content does not, so the elements below will go to the following line. Line elements will take only the width they need, so it's possible to display more than one element in the same line.
-Each element has semantic value strong > em > normal > small. With those labels we can set the relevance of each part of the text.
+Each element has semantic value strong > em > normal > small. With these labels we can set the relevance of each part of the text.
 - Line elements:
     - `em`: emphas
     - `strong`: more emphasis
@@ -34,4 +34,15 @@ Each element has semantic value strong > em > normal > small. With those labels 
     - `b`: bold (only style tag, no semantic value) 
     - `sup`: adds supper indexes 
     - `sub`: adds sub indexes
-- Block elements:
+
+## [Attribute](./tag-atributes/index.html)
+Aditional values to modify the HTML tags or it's behaviour
+- Common: `attribute="value"`
+- Boolean: `attribute`
+
+## [Global attributes](./tag-atributes/index.html)
+These attributes can be used in almost every HTML tag:
+- `class`: to add a CSS class
+- `id`: to add identifiers
+- `title`: accesibility tag to show element descriptions
+- `data-*` : allows to save values in the HTML tag
