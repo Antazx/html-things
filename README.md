@@ -46,3 +46,10 @@ These attributes can be used in almost every HTML tag:
 - `id`: to add identifiers
 - `title`: accesibility tag to show element descriptions
 - `data-*` : allows to save values in the HTML tag
+
+## [Links](links/index.html)
+Links are very important, they allow us to navigate through the web or to other webs. It has one mandatory attribute `href` with the route, it also has the `target` attribute to modify how the resource will be displayed:
+- `href`: absolute paths (with http:// or https://) for external webs: https://www.google.com, relative paths for internal pages
+- `target`: with absolute paths for external webs `_blank`
+- `download`: download the file in the path, the file must be in our server. Best practices are to save the files under assets/files, images, icons ...
+We can navigate in the page to tags with id by using, `href=#id-name`, this can be used to navigate to specific points in other pages like /other/other.html#someid
