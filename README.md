@@ -53,3 +53,22 @@ Links are very important, they allow us to navigate through the web or to other 
 - `target`: with absolute paths for external webs `_blank`
 - `download`: download the file in the path, the file must be in our server. Best practices are to save the files under assets/files, images, icons ...
 We can navigate in the page to tags with id by using, `href=#id-name`, this can be used to navigate to specific points in other pages like /other/other.html#someid
+
+## [Lists](lists/index.html)
+Used to list content, there are 3 types of lists:
+- `ul` unordered list: Order does not matters (used to create menus). It can has list type,to style the item marks (type="value"):
+    - disc (default value)
+    - circle
+    - square
+- `ol` ordered list: Order does matter. It can has list type,to style the item marks (type="value"), it also has the start="value" attribute to star on a default value:
+    - 1 (1, 2, 3 ...) (default value)
+    - A (A, B, C ...)
+    - a (a, b, c ...)
+    - I (I, II, III ...)
+    - i (i, ii, iii ...)
+- `dl` definition list: List of definitions (dictionary)
+Browsers differentiate between the type of site.
+Elements of the list are represented by `li` tag `ul` and `ol` lists.
+For `dt` list each element is represented with 2 tags:
+    - `dt` definition term: term to define
+    - `dd` definition description: term description
