@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        table {
+            font-family: sans-serif;
+            border: 2px solid grey;
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        caption {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        th,
+        td {
+            border: 2px solid grey;
+            padding: .5rem;
+        }
+
+        tr:nth-child(4) td:nth-child(2) {
+            background-color: darksalmon;
+            letter-spacing: 90px;
+            padding-left: 50px;
+            text-transform: uppercase;
+        }
+
+        td:first-child,
+        th,
+        tfoot {
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class schedule</h1>
+
+    <table>
+        <caption>CLASS SCHEDULE</caption>
+        <colgroup>
+            <col span="5"> <!-- This is the first column -->
+            <col> <!-- This is the second column -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:30 - 9:30</td>
+                <td>Math</td>
+                <td>Soc</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>9:30 - 10:25</td>
+                <td>Lang</td>
+                <td>Math</td>
+                <td>Lang</td>
+                <td>Sci</td>
+                <td>Lang</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Ph Ed</td>
+                <td>Sci</td>
+                <td>Lang</td>
+                <td>Lang</td>
+                <td>Ph Ed</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:45 - 12:40</td>
+                <td>Eng</td>
+                <td>Soc</td>
+                <td>Eng</td>
+                <td>Tut</td>
+                <td>Eng</td>
+            </tr>
+            <tr>
+                <td>12:40 - 13:35</td>
+                <td rowspan="2">Tech</td>
+                <td>Ph Ed</td>
+                <td>Art</td>
+                <td>Relg</td>
+                <td rowspan="2">Tech</td>
+            </tr>
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Frch</td>
+                <td>Tech</td>
+                <td>Frch</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Subjects count</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -56,19 +56,32 @@ We can navigate in the page to tags with id by using, `href=#id-name`, this can 
 
 ## [Lists](lists/index.html)
 Used to list content, there are 3 types of lists:
-- `ul` unordered list: Order does not matters (used to create menus). It can has list type,to style the item marks (type="value"):
+- `ul`: unordered list: Order does not matters (used to create menus). It can has list type,to style the item marks (type="value"):
     - disc (default value)
     - circle
     - square
-- `ol` ordered list: Order does matter. It can has list type,to style the item marks (type="value"), it also has the start="value" attribute to star on a default value:
-    - 1 (1, 2, 3 ...) (default value)
-    - A (A, B, C ...)
-    - a (a, b, c ...)
-    - I (I, II, III ...)
-    - i (i, ii, iii ...)
-- `dl` definition list: List of definitions (dictionary)
+- `ol`: ordered list: Order does matter. It can has list type,to style the item marks (type="value"), it also has the start="value" attribute to star on a default value:
+    - 1: (1, 2, 3 ...) (default value)
+    - A: (A, B, C ...)
+    - a: (a, b, c ...)
+    - I: (I, II, III ...)
+    - i: (i, ii, iii ...)
+- `dl`: definition list: List of definitions (dictionary)
 Browsers differentiate between the type of site.
 Elements of the list are represented by `li` tag `ul` and `ol` lists.
-For `dt` list each element is represented with 2 tags:
-    - `dt` definition term: term to define
-    - `dd` definition description: term description
+For `dt`: list each element is represented with 2 tags:
+    - `dt`: definition term: term to define
+    - `dd`: definition description: term description
+
+## [Tables](tables/index.html)
+Tables are used to display tabbed content, this is the basic structure of one table:
+- `table`: represents the table
+- `tr`: table row
+- `td`: table data, one cell
+The number of cells inside a row sets the number of columns of the table.
+The title of the table can be setted with the optional `caption` tag.
+We can set the header of the table with the `thead` tag and the `th` tag for each header. When we set a `thead` tag, we must place all the table content inside the `tbody` tag. Tables can also have a footer `tfoot`.
+We can modify the space of each cell, we have the following attributes:
+- `rowspan` the cell will take more than one row. (default value 1). It will take the space of the next rows. Common error
+- `colspan` the cell will take more than one col. (default value 1)
+We can group cols with the `colgroup` tag.
