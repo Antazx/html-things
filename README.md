@@ -85,3 +85,11 @@ We can modify the space of each cell, we have the following attributes:
 - `rowspan` the cell will take more than one row. (default value 1). It will take the space of the next rows. Common error
 - `colspan` the cell will take more than one col. (default value 1)
 We can group cols with the `colgroup` tag.
+
+## [Block Tags](block-tags/index.html)
+More block tags:
+- `address`: adds contact information to the nearest artible or the body
+- `blockquote`: used to mark citations to other authors or documents. It can has the attribute `cite=""` to reference the source of the content
+- `pre`: used to maintain the format of the text (tabs, end of lines ..) i.e. to print some formated code.
+- `div`: used to split the document, no semantic meaning, generic container normally used for styling from css
+- `hr`: horizontal rule, the browser understands that there is a change of subject. Don't use it to draw lines
