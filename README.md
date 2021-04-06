@@ -93,3 +93,10 @@ More block tags:
 - `pre`: used to maintain the format of the text (tabs, end of lines ..) i.e. to print some formated code.
 - `div`: used to split the document, no semantic meaning, generic container normally used for styling from css
 - `hr`: horizontal rule, the browser understands that there is a change of subject. Don't use it to draw lines
+
+## [Line Tags](line-tags/index.html)
+More line tags:
+- `span`: line container, equals div, is used to enclose words or small texts and style them through CSS or localise them from JS, it has no semantic meaning.
+- `q`: equivalent to blockquote, means quoute. To put quotations in line.
+- `code`: to enclose code that we want to represent visually, it usually goes with the pre tag. It has semantic meaning.
+- [Special entities: ASCII codes](https://ascii.cl/es/codigos-html.htm)
