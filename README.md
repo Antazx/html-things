@@ -100,3 +100,70 @@ More line tags:
 - `q`: equivalent to blockquote, means quoute. To put quotations in line.
 - `code`: to enclose code that we want to represent visually, it usually goes with the pre tag. It has semantic meaning.
 - [Special entities: ASCII codes](https://ascii.cl/es/codigos-html.htm)
+
+## [Forms](forms/index.html)
+Basic form structure:
+- `form`: wraps the form
+    - `action=""`: where to send the data (server, other html ..)
+    - `method=""`: method to execute GET/POST
+- `label`: sets the field label
+    - `for="fieldID"`: matches the label to the field
+- `input`: field to allow users to enter data
+    - `name`: **mandatory** 
+- `button`: allow users perform an acction
+
+**The default behaviour of forms reloads the current page**
+Related form tags
+- `fieldset`: used to group elements inside the form
+- `legend`: label for the fieldset content
+- `meter`: represents a value within a range
+- `progress`: progress of a task
+- `textarea`: multiline text input
+
+Most frequent field attributes:
+- `placeholder`: 
+- `required`: mandatory field
+- `readonly`: readonly field
+- `min - max`: for number input
+- `maxlenght - minlenght`: for text input
+- `selected`: to set a default value
+- `disabled`: disabled field
+- `autofocus`: sets the focus on the field
+
+## [Input types](forms/input-types.html)
+- `button`: same as `<button></button>` but it doesn't reloads the page. Doesn't send the data.
+- `color`: choose a color
+- `date`: enter a date
+- `datetime`: **Deprecated**
+- `datetime-local`: date and time, doesn't works on firefox
+- `email`: enter email
+- `hidden`: hidden field, could have a value but it isn't shown
+- `month`: enter a month
+- `week`: enter a week number
+- `number`: numeric values
+- `password`: passwords ***
+- `range`: set a range
+    -`step="10"`: how much the bar moves
+    -`min="0"`: min value
+    -`max="30"`: max value
+- `reset`: reset the forms
+- `search`: search bars
+- `submit`: sends the form
+- `tel`: phone numbers
+- `text`: **default value** plain texts
+- `time`: hours
+- `url`: URLs
+- `file`: files
+
+## [Selectable input types](forms/selectable-input-types.html)
+- `radio`: select only one option
+    - `name="category"`: sets the category to which the radio belongs and allows only one value per category
+    - `value=""`: what is the value of the element 
+    - `checked`: radio checked by default
+- `checkbox`: select multiple options
+    - Needs name and value as radio inputs
+- `select`: select from a list
+    - `name="category"`: sets the category
+    - `multiple`: allow to select more than one option
+    - `<option>`: each option goes in  tags, if there are lots of options, we can group them in `<optgroup>` and set a `label` atribute for each group. If has `selected` attribute, it's selected by default
+- `list`: filter with the text in the related datalist `list="datalistID"` it also shows the value attribute of the tag, each element of the list is one `option` tag

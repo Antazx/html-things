@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input types</title>
+</head>
+<body>
+
+    <form>
+        <input type="text">
+        <input type="button" value="button text"><!-- doesn't sends the data -->
+        <button>Enviar</button> <!-- sends the data and reloads page-->
+    </form>
+
+    <!-- Dates -->
+    <form>
+        <input type="datetime-local" name="" id=""><br>
+
+        <!-- Doesn't work on firefox -->
+        <input type="date" name="" id=""><br>
+        <!-- Fix -->
+        <input type="date" name="" id="">
+        <input type="time" name="" id=""><br>
+        <!-- <input type="datetime" name="" id=""> -->
+        <input type="month" name="" id=""><br>
+        <input type="week" name="" id="">
+    </form>
+
+    <form>
+        <!-- On mobile devices the fields are displayed differently and the compatibility with the keyboard is different. -->
+        <div>
+            <label>
+                Search
+                <input type="search" name="" id="">
+            </label>
+        </div>
+        <div>
+            <label>
+                Phone number
+                <input type="tel" name="" id="">
+            </label>
+        </div>
+        <div>    
+            <label>
+                Email
+                <input type="email" name="" id="">
+            </label>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password" name="" id="">
+            </label>
+        </div>
+        <div>
+            <label>
+                URL
+                <input type="url" name="" id="">
+            </label>
+        </div>
+    </form>
+
+    <form>
+        <input type="color" name="" id=""><br>
+        <input type="number" name="" id=""><br>
+        <input type="range" name="" id="" step="10"><br>
+        <input type="reset" name="" id=""><br>
+        <input type="text" name="" id=""><br>
+    </form>
+
+    <form action="">
+        <input type="file"><br>
+        <label for="fuel">Gass</label>
+        <meter id="fuel" min="0" max="100" value="60" low="30" high="75" optimum="50"></meter>
+        <progress id="task" max="100" value="75"></progress>
+        <label for="message">Message</label>
+        <textarea name="" id="message" cols="60" rows="10"></textarea>
+    </form>
+</body>
+</html>

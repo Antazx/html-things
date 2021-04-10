@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectable inputs</title>
+</head>
+<body>
+    <!-- Radio inputs -->
+    <form action="">
+        <label>
+            Human
+            <input type="radio" name="specie" id="" value="human">
+        </label>
+        <label>
+            Animal
+            <input type="radio" name="specie" id="" value="animal">
+        </label>
+        <label>
+            Unknown
+            <input type="radio" name="specie" id="" value="" checked>
+        </label>
+    </form>
+
+    <!-- Checkbox inputs -->
+    <form action="">
+        <label>
+            Ketchup
+            <input type="checkbox" name="sauces" id="" value="ketchup">
+        </label>
+        <label>
+            Magic sirop
+            <input type="checkbox" name="sauces" id="" value="magic-sirop" checked>
+        </label>
+        <label>
+            Diabetes sauce
+            <input type="checkbox" name="sauces" id="" value="diabetes-sauce" checked>
+        </label>
+    </form>
+
+    <!-- Select inputs -->
+    <form action="">
+        <label>
+            Language:
+            <select name="lenguages" multiple>
+                <option value="spanish" selected>Spanish</option>
+                <option value="english">English</option>
+                <option value="molacua">Molacua</option>
+            </select>
+        </label>
+    </form>
+    <form action="">
+        <label>
+            Pets:
+            <select name="pets">
+                <optgroup label="4 patas">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="cerdo">Cerdo</option>
+                </optgroup>
+                <optgroup label="Aves">
+                    <option value="loro">Loro</option>
+                    <option value="canario">Canario</option>
+                </optgroup>
+                <optgroup label="Otros">
+                    <option value="serpiente">Serpiente</option>
+                    <option value="tarantula">Tarantula</option>
+                    <option value="pez">Pez</option>
+                </optgroup>
+            </select>
+        </label>
+    </form>
+    <!-- Datalist -->
+    <form action="">
+        <input type="list" list="pets">
+        <datalist id="pets">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+            <option value="cerdo">Cerdo</option>
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+            <option value="pez">Pez</option>
+        </datalist>
+    </form>
+</body>
+</html>
