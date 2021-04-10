@@ -167,3 +167,27 @@ Most frequent field attributes:
     - `multiple`: allow to select more than one option
     - `<option>`: each option goes in  tags, if there are lots of options, we can group them in `<optgroup>` and set a `label` atribute for each group. If has `selected` attribute, it's selected by default
 - `list`: filter with the text in the related datalist `list="datalistID"` it also shows the value attribute of the tag, each element of the list is one `option` tag
+
+## Embedded content
+All the content that we retrive from outside our web. Usually these are the heaviest files on the web page (images, videos ..)
+- Pictures: There are two images types:
+    - Vectorial SVG (very ligth) icons logos .. 
+    - Bit map: jpg, png (8/24), gif, webp (recommended)
+- Audio
+- Video
+- Iframes
+Usually placed on /assets
+
+## [Images](embedded content/assets/index.html)
+Inserted with `<img>` tag
+- `src=""`: route to the image
+- `alt=""`: description of the image
+We can isert SVG images with the image tag or with the svg content on the html. The second option is only if we need to access the svg properties (i.e. to animate it from js)
+
+## Device pixel ration DPR
+Relation between the real amount of pixels of the devide and the available pixels to "draw" content
+DPR = real pixels / avaliable pixels
+On mobile devices, its usually 2.4 - 3
+- Viewport: available space to draw (1920 x 1080) [What is my viewport](https://whatismyviewport.com/)
+We shouldn't use the same image for mobile devices and for desktop, it's a big file that is not necessary on mobile devices. We can use one image or other depending on the device. We can do this with the `srcset` attribute, doesn't work on IE so we can also add `src` attribute
+ 
