@@ -183,7 +183,7 @@ All the content that we retrive from outside our web. Usually these are the heav
 - Iframes
 Usually placed on /assets
 
-## [Images](embedded content/assets/index.html)
+## [Images](embedded-content/assets/index.html)
 Inserted with `<img>` tag
 - `src=""`: route to the image
 - `alt=""`: description of the image
@@ -198,14 +198,14 @@ We shouldn't use the same image for mobile devices and for desktop, it's a big f
 
 When using the tags `<picture> - <source>` to display images, if the paths provided for the img tag is invalid the browser won't render any image. It works like a js switch, we set the sources for each case and its default fallback images, and the default picture is on img tag. 
  
-## [Audio](embedded content/audio.html)
+## [Audio](embedded-content/audio.html)
 The audio tag allows to insert audio content on the web, it has:
 - `src=""`: with the path to the audio file
 - `controls`: to dysplay controls of the song
 - `autoplay`: starts the audio on page load. If the content isn't muted the browser will stop autoplay
 - `loop`: auto-replay
 
-## [Video](embedded content/video.html)
+## [Video](embedded-content/video.html)
 The video tag allows to insert video content on the web, it has:
 - `src=""`: with the path to the video file
 - `controls`: to dysplay controls of the song
@@ -213,13 +213,13 @@ The video tag allows to insert video content on the web, it has:
 - `loop`: auto-replay
 - `poster`: sets the preview image
 
-## [Iframes](embedded content/video.html)
+## [Iframes](embedded-content/video.html)
 We can insert pieces of web from other pages (twitter, instagram ...), the madatory attributes are:
 - `width` and `heigth`
 - `src`: uri to the content
 **Performance is affected** 
 
-## [Video](embedded content/figure.html)
+## [Video](embedded-content/figure.html)
 The `figure` tag is used to add related content to the page but when it's opcional content
 Used to break the flow of content with other content that is related but not necessary to understand the article.
 The code snippets should be in a figure tag, data with kpi, tables... It can be accompanied by the `figcaption` tag to put details about the content both above and below the figure.
