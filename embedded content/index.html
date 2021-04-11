@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded content</title>
+
+    <style>
+        img {
+            max-width: 100%;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Embedded content</h1>
+    <!-- <img src="images/cars.jpg" alt="cars">
+    <img src="images/741407.svg" alt="car"> -->
+    <img srcset="
+    images/Cars-746710621-large.jpg, 
+    images/cars.jpg 3x" 
+    src="images/Cars-746710621-large.jpg" alt="cars">
+    
+    <!-- The best way to set multiple srcset for one image in webp is using picture and source tags -->
+    <!-- On the image we set the jpg just in case the browser can't render webp -->
+
+    <picture>
+        <source srcset="
+        images/cars-image.webp, 
+        images/cars-image.jpg">
+        <img src="images/cars-image.jpg" alt="Picture of a car">
+    </picture>
+
+    <!-- In this example we are loading the rayo picture when the width is < 1200 and the Brz >1200 -->
+    <!-- It works in a similar way of js switch-->
+    <picture>
+        <!-- case width < 700px -->
+        <!-- <source srcset="images/small.webp, images/small.jpg" media="(max-width:1200px)"> -->
+
+        <!-- case width < 1200px -->
+        <source srcset="images/Cars-746710621-large.jpg" media="(max-width:1200px)">
+
+        <!-- case width < 3200px -->
+        <!-- <source srcset="images/verybug.webp, images/verybug.jpg" media="(max-width:1200px)"> -->
+
+        <!-- default -->
+        <img src="images/cars-image.jpg" alt="Picture of a car">
+    </picture>
+
+
+</body>
+</html>

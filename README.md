@@ -1,6 +1,11 @@
 # My HTML things
 
-## [W3 HTML Validator](https://validator.w3.org/)
+## Web tools
+- [Webp converter](https://www.online-convert.com/es/resultado#j=25134d36-5170-40a4-8bbc-a6c41a14f889)
+- [W3 HTML Validator](https://validator.w3.org/)
+- [What is my viewport](https://whatismyviewport.com/)
+- [Markdown previewer & syntax](https://markdownlivepreview.com/)
+- [Special entities: ASCII codes](https://ascii.cl/es/codigos-html.htm)
 
 ## [Headings and paragraphs](./titles-and-paragraphs/index.html) 
 Headings tags are not only  to control the size of the text, they also have their own meaning. We shouldn't write `h2` headings without writting `h1` heading before and so on.
@@ -189,5 +194,32 @@ Relation between the real amount of pixels of the devide and the available pixel
 DPR = real pixels / avaliable pixels
 On mobile devices, its usually 2.4 - 3
 - Viewport: available space to draw (1920 x 1080) [What is my viewport](https://whatismyviewport.com/)
-We shouldn't use the same image for mobile devices and for desktop, it's a big file that is not necessary on mobile devices. We can use one image or other depending on the device. We can do this with the `srcset` attribute, doesn't work on IE so we can also add `src` attribute
+We shouldn't use the same image for mobile devices and for desktop, it's a big file that is not necessary on mobile devices. We can use one image or other depending on the device. We can do this with the `srcset` attribute, doesn't work on IE so we can also add `src` attribute.
+
+When using the tags `<picture> - <source>` to display images, if the paths provided for the img tag is invalid the browser won't render any image. It works like a js switch, we set the sources for each case and its default fallback images, and the default picture is on img tag. 
  
+## [Audio](embedded content/audio.html)
+The audio tag allows to insert audio content on the web, it has:
+- `src=""`: with the path to the audio file
+- `controls`: to dysplay controls of the song
+- `autoplay`: starts the audio on page load. If the content isn't muted the browser will stop autoplay
+- `loop`: auto-replay
+
+## [Video](embedded content/video.html)
+The video tag allows to insert video content on the web, it has:
+- `src=""`: with the path to the video file
+- `controls`: to dysplay controls of the song
+- `autoplay`: starts the video on page load. If the content isn't muted the browser will stop autoplay
+- `loop`: auto-replay
+- `poster`: sets the preview image
+
+## [Iframes](embedded content/video.html)
+We can insert pieces of web from other pages (twitter, instagram ...), the madatory attributes are:
+- `width` and `heigth`
+- `src`: uri to the content
+**Performance is affected** 
+
+## [Video](embedded content/figure.html)
+The `figure` tag is used to add related content to the page but when it's opcional content
+Used to break the flow of content with other content that is related but not necessary to understand the article.
+The code snippets should be in a figure tag, data with kpi, tables... It can be accompanied by the `figcaption` tag to put details about the content both above and below the figure.
