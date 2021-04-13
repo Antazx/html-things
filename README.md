@@ -3,6 +3,7 @@
 ## Web tools
 - [Webp converter](https://www.online-convert.com/es/resultado#j=25134d36-5170-40a4-8bbc-a6c41a14f889)
 - [W3 HTML Validator](https://validator.w3.org/)
+- [Favicon generator](https://www.favicon-generator.org/)
 - [What is my viewport](https://whatismyviewport.com/)
 - [Markdown previewer & syntax](https://markdownlivepreview.com/)
 - [Special entities: ASCII codes](https://ascii.cl/es/codigos-html.htm)
@@ -183,12 +184,6 @@ All the content that we retrive from outside our web. Usually these are the heav
 - Iframes
 Usually placed on /assets
 
-## [Images](embedded-content/assets/index.html)
-Inserted with `<img>` tag
-- `src=""`: route to the image
-- `alt=""`: description of the image
-We can isert SVG images with the image tag or with the svg content on the html. The second option is only if we need to access the svg properties (i.e. to animate it from js)
-
 ## Device pixel ration DPR
 Relation between the real amount of pixels of the devide and the available pixels to "draw" content
 DPR = real pixels / avaliable pixels
@@ -198,6 +193,12 @@ We shouldn't use the same image for mobile devices and for desktop, it's a big f
 
 When using the tags `<picture> - <source>` to display images, if the paths provided for the img tag is invalid the browser won't render any image. It works like a js switch, we set the sources for each case and its default fallback images, and the default picture is on img tag. 
  
+## [Images](embedded-content/assets/index.html)
+Inserted with `<img>` tag
+- `src=""`: route to the image
+- `alt=""`: description of the image
+We can isert SVG images with the image tag or with the svg content on the html. The second option is only if we need to access the svg properties (i.e. to animate it from js)
+
 ## [Audio](embedded-content/audio.html)
 The audio tag allows to insert audio content on the web, it has:
 - `src=""`: with the path to the audio file
@@ -219,7 +220,16 @@ We can insert pieces of web from other pages (twitter, instagram ...), the madat
 - `src`: uri to the content
 **Performance is affected** 
 
-## [Video](embedded-content/figure.html)
-The `figure` tag is used to add related content to the page but when it's opcional content
-Used to break the flow of content with other content that is related but not necessary to understand the article.
-The code snippets should be in a figure tag, data with kpi, tables... It can be accompanied by the `figcaption` tag to put details about the content both above and below the figure.
+## [Meta tags](embedded-content/figure.html)
+Attribute list of meta tag, usually formed with `name=""` and `content=""`:
+- `charset`: codification
+- `title`: Web title
+- `viewport`: Allows rendering the page on mobile devices
+- `description`: Sumary shown when the link is displayed on web searchs
+- `author`
+
+## [Accessibility](accessibility/index.html)
+Very extended subject, this is the basics. There are voice-browsers that dictate the content of the page to you.
+- `tabindex`: sets the orden when navigating using tab.
+- `aria-label`: audio description of the content
+- `role`: audio description of element type
