@@ -233,3 +233,30 @@ Very extended subject, this is the basics. There are voice-browsers that dictate
 - `tabindex`: sets the orden when navigating using tab.
 - `aria-label`: audio description of the content
 - `role`: audio description of element type
+
+## [Open graph protocol](https://ogp.me/)
+Developed by facebook, we can customice what the user will see when they copy our link page in other platforms, like twitter, facebook..
+We can set a title, descriptiion, poster
+
+```
+<head>
+<title>The Rock (1996)</title>
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+...
+</head>
+```
+
+## [Twitter Card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image)
+Similar to opg, but for twitter
+```
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@nytimes">
+<meta name="twitter:creator" content="@SarahMaslinNir">
+<meta name="twitter:title" content="Parade of Fans for Houston’s Funeral">
+<meta name="twitter:description" content="NEWARK - The guest list and parade of limousines with celebrities emerging from them seemed more suited to a red carpet event in Hollywood or New York than than a gritty stretch of Sussex Avenue near the former site of the James M. Baxter Terrace public housing project here.">
+<meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+```
+[Card validator](https://cards-dev.twitter.com/validator)
