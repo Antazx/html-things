@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web component example</title>
+        <style>
+            picture {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100px;
+            }
+            img {
+                width: 100px;
+                border-radius: 50%;
+                box-shadow: 0 0 15px #999;
+            }
+            .disabled {
+                opacity: .3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>People</h1>
+        <div id="app"></div>
+        <script>
+            const $app = document.getElementById("app");
+            const Avatar = (params) => {
+                const src = `https://randomuser.me/api/portraits/lego/${params.id}.jpg`;
+                return `<picture>
+                        <img src="${src}">
+                        <em>${params.name}</em>
+                    </picture>`;
+            };
+
+            $app.innerHTML += Avatar({ id: 1, name: "Guillermo" });
+            $app.innerHTML += Avatar({ id: 2, name: "Celia" });
+            $app.innerHTML += Avatar({ id: 2, name: "Rodrigo" });
+
+            $app.querySelectorAll("img").forEach((img) => {
+                img.addEventListener("click", () => {
+                    img.classList.toggle("disabled");
+                })
+            });
+        </script>
+    </body>
+</html>
